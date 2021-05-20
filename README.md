@@ -1,11 +1,11 @@
 ```
 $ python3 -m venv venv
 $ . venv/bin/activate
-$ export FLASK_APP=hello.py
+$ export FLASK_APP=app.py
 $ flask run
 ```
 ```
-$ celery -A hello.celery worker
+$ celery -A app.celery worker
 ```
 ```
 $ pip3 freeze > requirements.txt
